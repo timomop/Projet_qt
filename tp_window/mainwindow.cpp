@@ -7,12 +7,12 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    QString img_name = "C:/Users/timo/Pictures/mario.png";
+    QString img_name = "F:/Cours/Projet_qt/tp_server/mario.png";
 
     QImage image = QImage(img_name);
-    QImage image_2 = image->scaled(10,10,Qt::KeepAspectRatio);
+  //  QImage image_2 = image->scaled(10,10,Qt::KeepAspectRatio);
 
-    ui->label_image1->setPixmap(QPixmap::fromImage(image_2));
+    ui->label_image1->setPixmap(QPixmap::fromImage(image));
 }
 
 MainWindow::~MainWindow()
