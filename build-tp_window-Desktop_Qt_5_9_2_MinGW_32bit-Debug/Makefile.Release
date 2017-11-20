@@ -206,6 +206,10 @@ release/moc_mainwindow.cpp: ../../../QT/5.9.2/mingw53_32/include/QtWidgets/QMain
 		../../../QT/5.9.2/mingw53_32/include/QtGui/qtouchdevice.h \
 		../../../QT/5.9.2/mingw53_32/include/QtWidgets/qtabwidget.h \
 		../../../QT/5.9.2/mingw53_32/include/QtGui/qicon.h \
+		../../../QT/5.9.2/mingw53_32/include/QtCore/QObject \
+		../../../QT/5.9.2/mingw53_32/include/QtGui/QImage \
+		../../../QT/5.9.2/mingw53_32/include/QtCore/QBuffer \
+		../../../QT/5.9.2/mingw53_32/include/QtCore/qbuffer.h \
 		../tp_window/mainwindow.h \
 		release/moc_predefs.h \
 		../../../QT/5.9.2/mingw53_32/bin/moc.exe
@@ -336,6 +340,10 @@ release/main.o: ../tp_window/main.cpp ../tp_window/mainwindow.h \
 		../../../QT/5.9.2/mingw53_32/include/QtGui/qtouchdevice.h \
 		../../../QT/5.9.2/mingw53_32/include/QtWidgets/qtabwidget.h \
 		../../../QT/5.9.2/mingw53_32/include/QtGui/qicon.h \
+		../../../QT/5.9.2/mingw53_32/include/QtCore/QObject \
+		../../../QT/5.9.2/mingw53_32/include/QtGui/QImage \
+		../../../QT/5.9.2/mingw53_32/include/QtCore/QBuffer \
+		../../../QT/5.9.2/mingw53_32/include/QtCore/qbuffer.h \
 		../../../QT/5.9.2/mingw53_32/include/QtWidgets/QApplication \
 		../../../QT/5.9.2/mingw53_32/include/QtWidgets/qapplication.h \
 		../../../QT/5.9.2/mingw53_32/include/QtCore/qcoreapplication.h \
@@ -449,6 +457,10 @@ release/mainwindow.o: ../tp_window/mainwindow.cpp ../tp_window/mainwindow.h \
 		../../../QT/5.9.2/mingw53_32/include/QtGui/qtouchdevice.h \
 		../../../QT/5.9.2/mingw53_32/include/QtWidgets/qtabwidget.h \
 		../../../QT/5.9.2/mingw53_32/include/QtGui/qicon.h \
+		../../../QT/5.9.2/mingw53_32/include/QtCore/QObject \
+		../../../QT/5.9.2/mingw53_32/include/QtGui/QImage \
+		../../../QT/5.9.2/mingw53_32/include/QtCore/QBuffer \
+		../../../QT/5.9.2/mingw53_32/include/QtCore/qbuffer.h \
 		ui_mainwindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\mainwindow.o ..\tp_window\mainwindow.cpp
 

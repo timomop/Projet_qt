@@ -28,6 +28,9 @@ class Ui_MainWindow
 public:
     QWidget *centralWidget;
     QLabel *label_image1;
+    QLabel *label_image1_2;
+    QLabel *label_image1_3;
+    QLabel *label_image1_4;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -41,7 +44,16 @@ public:
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         label_image1 = new QLabel(centralWidget);
         label_image1->setObjectName(QStringLiteral("label_image1"));
-        label_image1->setGeometry(QRect(20, 120, 711, 451));
+        label_image1->setGeometry(QRect(30, 130, 151, 181));
+        label_image1_2 = new QLabel(centralWidget);
+        label_image1_2->setObjectName(QStringLiteral("label_image1_2"));
+        label_image1_2->setGeometry(QRect(210, 130, 151, 181));
+        label_image1_3 = new QLabel(centralWidget);
+        label_image1_3->setObjectName(QStringLiteral("label_image1_3"));
+        label_image1_3->setGeometry(QRect(390, 130, 151, 181));
+        label_image1_4 = new QLabel(centralWidget);
+        label_image1_4->setObjectName(QStringLiteral("label_image1_4"));
+        label_image1_4->setGeometry(QRect(570, 130, 151, 181));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
@@ -63,6 +75,9 @@ public:
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", Q_NULLPTR));
         label_image1->setText(QString());
+        label_image1_2->setText(QString());
+        label_image1_3->setText(QString());
+        label_image1_4->setText(QString());
     } // retranslateUi
 
 };
