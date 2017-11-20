@@ -17,10 +17,10 @@
    <widget class="QLabel" name="label_image1">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>130</y>
-      <width>151</width>
-      <height>181</height>
+      <x>330</x>
+      <y>150</y>
+      <width>281</width>
+      <height>261</height>
      </rect>
     </property>
     <property name="text">
@@ -30,10 +30,10 @@
    <widget class="QLabel" name="label_image1_2">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>130</y>
-      <width>151</width>
-      <height>181</height>
+      <x>20</x>
+      <y>150</y>
+      <width>271</width>
+      <height>251</height>
      </rect>
     </property>
     <property name="text">
@@ -43,27 +43,47 @@
    <widget class="QLabel" name="label_image1_3">
     <property name="geometry">
      <rect>
-      <x>390</x>
-      <y>130</y>
-      <width>151</width>
-      <height>181</height>
+      <x>650</x>
+      <y>150</y>
+      <width>281</width>
+      <height>261</height>
      </rect>
     </property>
     <property name="text">
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_image1_4">
+   <widget class="QTextEdit" name="text_in">
     <property name="geometry">
      <rect>
-      <x>570</x>
-      <y>130</y>
-      <width>151</width>
-      <height>181</height>
+      <x>60</x>
+      <y>20</y>
+      <width>441</width>
+      <height>61</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="m_button">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>20</y>
+      <width>111</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="text">
-     <string/>
+     <string>Envoi</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="text_in_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>530</y>
+      <width>441</width>
+      <height>61</height>
+     </rect>
     </property>
    </widget>
   </widget>
@@ -73,7 +93,7 @@
      <x>0</x>
      <y>0</y>
      <width>945</width>
-     <height>21</height>
+     <height>26</height>
     </rect>
    </property>
   </widget>

@@ -17,7 +17,9 @@
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
+#include <QtWidgets/QTextEdit>
 #include <QtWidgets/QToolBar>
 #include <QtWidgets/QWidget>
 
@@ -30,7 +32,9 @@ public:
     QLabel *label_image1;
     QLabel *label_image1_2;
     QLabel *label_image1_3;
-    QLabel *label_image1_4;
+    QTextEdit *text_in;
+    QPushButton *m_button;
+    QTextEdit *text_in_2;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -44,20 +48,26 @@ public:
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         label_image1 = new QLabel(centralWidget);
         label_image1->setObjectName(QStringLiteral("label_image1"));
-        label_image1->setGeometry(QRect(30, 130, 151, 181));
+        label_image1->setGeometry(QRect(330, 150, 281, 261));
         label_image1_2 = new QLabel(centralWidget);
         label_image1_2->setObjectName(QStringLiteral("label_image1_2"));
-        label_image1_2->setGeometry(QRect(210, 130, 151, 181));
+        label_image1_2->setGeometry(QRect(20, 150, 271, 251));
         label_image1_3 = new QLabel(centralWidget);
         label_image1_3->setObjectName(QStringLiteral("label_image1_3"));
-        label_image1_3->setGeometry(QRect(390, 130, 151, 181));
-        label_image1_4 = new QLabel(centralWidget);
-        label_image1_4->setObjectName(QStringLiteral("label_image1_4"));
-        label_image1_4->setGeometry(QRect(570, 130, 151, 181));
+        label_image1_3->setGeometry(QRect(650, 150, 281, 261));
+        text_in = new QTextEdit(centralWidget);
+        text_in->setObjectName(QStringLiteral("text_in"));
+        text_in->setGeometry(QRect(60, 20, 441, 61));
+        m_button = new QPushButton(centralWidget);
+        m_button->setObjectName(QStringLiteral("m_button"));
+        m_button->setGeometry(QRect(510, 20, 111, 61));
+        text_in_2 = new QTextEdit(centralWidget);
+        text_in_2->setObjectName(QStringLiteral("text_in_2"));
+        text_in_2->setGeometry(QRect(40, 530, 441, 61));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 945, 21));
+        menuBar->setGeometry(QRect(0, 0, 945, 26));
         MainWindow->setMenuBar(menuBar);
         mainToolBar = new QToolBar(MainWindow);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
@@ -77,7 +87,7 @@ public:
         label_image1->setText(QString());
         label_image1_2->setText(QString());
         label_image1_3->setText(QString());
-        label_image1_4->setText(QString());
+        m_button->setText(QApplication::translate("MainWindow", "Envoi", Q_NULLPTR));
     } // retranslateUi
 
 };

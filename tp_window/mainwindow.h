@@ -5,6 +5,13 @@
 #include <QObject>
 #include <QImage>
 #include <QBuffer>
+#include <QDebug>
+#include <QPushButton>
+#include <QtWidgets>
+
+
+
+
 
 namespace Ui {
 class MainWindow;
@@ -20,6 +27,17 @@ public:
 
 private:
     Ui::MainWindow *ui;
+   void connection();
+   void image();
+
+
+   QString text;
+   QPushButton* m_button;
+public slots :
+    //void button();
+
+private slots:
+
 };
 
 #endif // MAINWINDOW_H

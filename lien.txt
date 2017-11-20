@@ -1,0 +1,2 @@
+https://stackoverflow.com/questions/32018941/qt-qlabel-click-event
+https://wiki.qt.io/Clickable_QLabel
