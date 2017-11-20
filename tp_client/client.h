@@ -16,9 +16,10 @@ class client : public QObject
 public:
 
     explicit client(QObject *parent = NULL);
-    int mTaille;
+    int mTaille ;
 
     QTcpSocket* mSock;
+    QByteArray mByteArray;
 
 public slots:
     void clientConnected();

@@ -3,6 +3,7 @@
 
 client::client(QObject *parent)  : QObject(parent)
 {
+    mTaille=0;
     mSock = new QTcpSocket(this);
     connect( mSock, SIGNAL(disconnected()),mSock, SLOT(deleteLater()));
     connect( mSock, SIGNAL(readyRead()),this, SLOT(readyToRead()));
@@ -16,24 +17,20 @@ void client::readyToRead()
 {
     QTcpSocket* sockTmp = (QTcpSocket*)sender();
 
-    QByteArray mByteArray(sockTmp->readAll());
-
-    QByteArray data;
-
-    int index = mByteArray.indexOf('\0');
-    int mTaille = mByteArray.left(index).toInt();
-    mByteArray.remove(0,index+1);
+    mByteArray.append(sockTmp->readAll());
 
     if(mTaille == 0){
 
-        // mTaille = ?
+        int index = mByteArray.indexOf('\0');
+        mTaille = mByteArray.left(index).toInt();
+        mByteArray.remove(0,index+1);
 
         qDebug() << "taille : " << mTaille << endl;
 
-    }else if( data.size() < mTaille){
-        data.append(mByteArray);
+    }else if( mByteArray.size() <= mTaille){
+
         qDebug() << "mByteArray :"<< mByteArray << endl;
-        qDebug() << "Data : "<< data << endl;
+
 
     }
 

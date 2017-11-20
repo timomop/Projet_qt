@@ -17,7 +17,8 @@ void server::serverConnected()
     //  connection->write("test");
 
 
-    QString img_name = "C:/Users/timo/Pictures/mario.png";
+    QString img_name = "‪D:/Cours/DM/Projet_qt/image/banane.png";
+    //QString img_name = "‪D:/Cours/DM/Projet_qt/image/nature.png";
     QImage image = QImage(img_name);
 
     if (image.isNull()){
