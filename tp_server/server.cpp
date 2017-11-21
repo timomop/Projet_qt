@@ -16,8 +16,8 @@ void server::serverConnected()
     connect(connection, SIGNAL(readyRead()),this, SLOT(readyToRead()));
     //  connection->write("test");
 
+   QString img_name = "F:/Cours/Projet_qt/image/nature.png";
 
-    QString img_name = "‪D:/Cours/DM/Projet_qt/image/banane.png";
     //QString img_name = "‪D:/Cours/DM/Projet_qt/image/nature.png";
     QImage image = QImage(img_name);
 
