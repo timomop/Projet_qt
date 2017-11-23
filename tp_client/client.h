@@ -17,6 +17,7 @@ public:
 
     explicit client(QObject *parent = NULL);
     int mTaille ;
+    int index;
 
     QTcpSocket* mSock;
     QByteArray mByteArray;

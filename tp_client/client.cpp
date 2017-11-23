@@ -1,4 +1,5 @@
 #include "client.h"
+#include <QFile>
 
 
 client::client(QObject *parent)  : QObject(parent)
@@ -21,16 +22,31 @@ void client::readyToRead()
 
     if(mTaille == 0){
 
-        int index = mByteArray.indexOf('\0');
+        index = mByteArray.indexOf("aaa");
         mTaille = mByteArray.left(index).toInt();
-        mByteArray.remove(0,index+1);
+        mByteArray.remove(0,index+3);
 
         qDebug() << "taille : " << mTaille << endl;
 
+
     }else if( mByteArray.size() <= mTaille){
 
-        qDebug() << "mByteArray :"<< mByteArray << endl;
+      //  mByteArray.append(mByteArray);
 
+        qDebug() << "mbyte : " << mByteArray.size() << endl;
+    }
+
+    if ( mTaille <= mByteArray.size()  ){
+        qDebug()<< "out" << endl;
+        qDebug()<< "mbyte :" << mByteArray.size() <<endl;
+
+        /*
+         // Test image
+        QFile file("F:/Cours/Projet_qt/image/img.png");
+        file.open(QIODevice::WriteOnly);
+        file.write(mByteArray);
+        file.close();
+        */
 
     }
 
@@ -50,3 +66,7 @@ void client::clientConnected()
     sockTmp->write("client connected");
 
 }
+
+
+
+

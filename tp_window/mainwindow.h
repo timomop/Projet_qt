@@ -29,6 +29,7 @@ private:
     Ui::MainWindow *ui;
    void connection();
    void image();
+   void button();
 
 
    QString text;

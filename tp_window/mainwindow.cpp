@@ -14,18 +14,19 @@ MainWindow::MainWindow(QWidget *parent) :
 void MainWindow::image()
 {
     //pc fixe
-    /*
+
     QString img_name = "F:/Cours/Projet_qt/image/nature.png";
     QString img_name1 = "‪F:/Cours/Projet_qt/image/montagne_image.png";
     QString img_name2 = "F:/Cours/Projet_qt/image/m.png";
 
-    */
+
 
     //PC portable
-
+/*
     QString img_name = "D:/Cours/DM/Projet_qt/image/montagne_image.png";
     QString img_name1 = "D:/Cours/DM/Projet_qt/image/banane.png";
     QString img_name2 = "D:/Cours/DM/Projet_qt/image/pingouin.png";
+    */
 
     QImage image = QImage(img_name);
     QImage image_1 = image.scaled(300,200,Qt::KeepAspectRatio);

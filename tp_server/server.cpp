@@ -16,15 +16,17 @@ void server::serverConnected()
     connect(connection, SIGNAL(readyRead()),this, SLOT(readyToRead()));
     //  connection->write("test");
 
-   QString img_name = "F:/Cours/Projet_qt/image/nature.png";
+ //  QString img_name = "F:/Cours/Projet_qt/image/nature.png";
 
     //QString img_name = "‪D:/Cours/DM/Projet_qt/image/nature.png";
+
+    QString img_name = "F:/Cours/Projet_qt/image/m.png";
+
     QImage image = QImage(img_name);
 
     if (image.isNull()){
-        qDebug() << "image nul" << endl;
+        qDebug() << "image 1 nul" << endl;
     }
-
 
     QByteArray ba ;
     QBuffer buffer(&ba);
@@ -34,7 +36,7 @@ void server::serverConnected()
     int taille = ba.size();
     QString s =  QString::number(taille);
     connection->write(s.toLocal8Bit());     //envoi de la taille
-    connection->write("\0");                // envoi de la séparation
+    connection->write("aaa");                // envoi de la séparation
     connection->write(ba);                  // envoi de la data
 
 }
