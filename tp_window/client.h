@@ -6,6 +6,8 @@
 #include <QTcpSocket>
 #include <QImage>
 #include <QBuffer>
+#include "ui_mainwindow.h"
+
 
 
 
@@ -19,9 +21,14 @@ public:
     int mTaille ;
     int index;
 
+
+
     QTcpSocket* mSock;
-    QImage img1;
     QByteArray mByteArray;
+
+    QByteArray getByteArray() const;
+
+private :
 
 public slots:
     void clientConnected();

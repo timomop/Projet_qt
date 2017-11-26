@@ -237,6 +237,7 @@ Makefile: ../tp_window/tp_window.pro ../../../QT/5.9.2/mingw53_32/mkspecs/win32-
 		../../../QT/5.9.2/mingw53_32/lib/qtmaind.prl \
 		../../../QT/5.9.2/mingw53_32/lib/Qt5Widgets.prl \
 		../../../QT/5.9.2/mingw53_32/lib/Qt5Gui.prl \
+		../../../QT/5.9.2/mingw53_32/lib/Qt5Network.prl \
 		../../../QT/5.9.2/mingw53_32/lib/Qt5Core.prl
 	$(QMAKE) -o Makefile ..\tp_window\tp_window.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
 ../../../QT/5.9.2/mingw53_32/mkspecs/features/spec_pre.prf:
@@ -415,6 +416,7 @@ Makefile: ../tp_window/tp_window.pro ../../../QT/5.9.2/mingw53_32/mkspecs/win32-
 ../../../QT/5.9.2/mingw53_32/lib/qtmaind.prl:
 ../../../QT/5.9.2/mingw53_32/lib/Qt5Widgets.prl:
 ../../../QT/5.9.2/mingw53_32/lib/Qt5Gui.prl:
+../../../QT/5.9.2/mingw53_32/lib/Qt5Network.prl:
 ../../../QT/5.9.2/mingw53_32/lib/Qt5Core.prl:
 qmake: FORCE
 	@$(QMAKE) -o Makefile ..\tp_window\tp_window.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"

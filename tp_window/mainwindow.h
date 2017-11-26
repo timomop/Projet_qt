@@ -8,9 +8,7 @@
 #include <QDebug>
 #include <QPushButton>
 #include <QtWidgets>
-
-
-
+#include "client.h"
 
 
 namespace Ui {
@@ -23,17 +21,18 @@ class MainWindow : public QMainWindow
 
 public:
     explicit MainWindow(QWidget *parent = 0);
-    ~MainWindow();
+    ~MainWindow();    
+
 
 private:
     Ui::MainWindow *ui;
-   void connection();
-   void image();
-   void button();
+    void connection();
+    void image();
+    void button();
 
 
-   QString text;
-   QPushButton* m_button;
+    QString text;
+    QPushButton* m_button;
 public slots :
     //void button();
 
