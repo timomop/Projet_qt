@@ -19,7 +19,6 @@ QByteArray client::getByteArray() const
     return mByteArray;
 }
 
-
 void client::readyToRead()
 {
     QTcpSocket* sockTmp = (QTcpSocket*)sender();
@@ -50,7 +49,6 @@ void client::readyToRead()
     qDebug() <<"from" << sockTmp->peerAdress().toString() << ":" ;
     qDebug() << sockTmp->readAll();
     */
-
 }
 
 void client::clientConnected()

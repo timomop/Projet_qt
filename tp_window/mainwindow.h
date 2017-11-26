@@ -21,20 +21,23 @@ class MainWindow : public QMainWindow
 
 public:
     explicit MainWindow(QWidget *parent = 0);
-    ~MainWindow();    
+    ~MainWindow();
+
+    QImage img1;
+    QByteArray byteimg;
 
 
 private:
     Ui::MainWindow *ui;
-    void connection();
+  //  void connection();
     void image();
-    void button();
+  //  void button();
 
 
     QString text;
     QPushButton* m_button;
 public slots :
-    //void button();
+
 
 private slots:
 

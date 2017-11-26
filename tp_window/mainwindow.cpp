@@ -7,18 +7,12 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    client c;
-
     image();
 
 }
 
 void MainWindow::image()
-{
-
-    client c;
-    QByteArray test;
-    QImage imgtest;
+{     
 
     /*
     //pc fixe
@@ -48,16 +42,15 @@ void MainWindow::image()
     ui->label_image1_3->setPixmap(QPixmap::fromImage(image_3));
 */
 
+    byteimg = client::getByteArray();
 
-   test = c.getByteArray();
-   imgtest.loadFromData(test,"PNG");
-
-    ui->label_image1_3->setPixmap(QPixmap::fromImage(imgtest));
+    img1.loadFromData(byteimg,"PNG");
+    ui->label_image1_3->setPixmap(QPixmap::fromImage(img1));
 
 
 }
 
-
+/*
 void MainWindow::connection(){
 
     QObject::connect(m_button,SIGNAL(clicked()),this,SLOT());
@@ -72,7 +65,7 @@ void MainWindow::button()
     ui->text_in_2->setPlainText(text);
 
 }
-
+*/
 MainWindow::~MainWindow()
 {
     delete ui;
