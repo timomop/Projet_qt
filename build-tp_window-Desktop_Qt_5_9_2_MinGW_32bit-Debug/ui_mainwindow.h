@@ -34,7 +34,6 @@ public:
     QLabel *label_image1_3;
     QTextEdit *text_in;
     QPushButton *m_button;
-    QTextEdit *text_in_2;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -61,13 +60,10 @@ public:
         m_button = new QPushButton(centralWidget);
         m_button->setObjectName(QStringLiteral("m_button"));
         m_button->setGeometry(QRect(510, 20, 111, 61));
-        text_in_2 = new QTextEdit(centralWidget);
-        text_in_2->setObjectName(QStringLiteral("text_in_2"));
-        text_in_2->setGeometry(QRect(40, 530, 441, 61));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 945, 26));
+        menuBar->setGeometry(QRect(0, 0, 945, 21));
         MainWindow->setMenuBar(menuBar);
         mainToolBar = new QToolBar(MainWindow);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));

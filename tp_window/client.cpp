@@ -1,4 +1,5 @@
 #include "client.h"
+
 #include <QFile>
 
 
@@ -13,6 +14,10 @@ client::client(QObject *parent)  : QObject(parent)
     mSock->connectToHost("127.0.0.1", 5555);
 }
 
+QByteArray client::getByteArray() const
+{
+    return mByteArray;
+}
 
 void client::readyToRead()
 {
@@ -36,26 +41,14 @@ void client::readyToRead()
 
     if ( mTaille <= mByteArray.size()  ){
         qDebug()<< "out" << endl;
-        qDebug()<< "mbyte :" << mByteArray.size() <<endl;
-
-        /*
-         // Test image
-        QFile file("F:/Cours/Projet_qt/image/img.png");
-        file.open(QIODevice::WriteOnly);
-        file.write(mByteArray);
-        file.close();
-        */
 
     }
-
-
 
     /*
     QByteArray b = socket->readAll();
     qDebug() <<"from" << sockTmp->peerAdress().toString() << ":" ;
     qDebug() << sockTmp->readAll();
     */
-
 }
 
 void client::clientConnected()

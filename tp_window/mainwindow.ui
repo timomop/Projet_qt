@@ -76,16 +76,6 @@
      <string>Envoi</string>
     </property>
    </widget>
-   <widget class="QTextEdit" name="text_in_2">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>530</y>
-      <width>441</width>
-      <height>61</height>
-     </rect>
-    </property>
-   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
@@ -93,7 +83,7 @@
      <x>0</x>
      <y>0</y>
      <width>945</width>
-     <height>26</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>
